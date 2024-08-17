@@ -109,7 +109,7 @@ The library is spread out among several files:
   with the parser. This is more of a design win than a performance win, but it is more than
   fast enough.
   * _parse.go_: Takes tokens from the lexer and parses the sed program. It's really a
-  parser+compiler, becuase the output is an array of instructions for the VM to 
+  parser+compiler, because the output is an array of instructions for the VM to 
   interpret.  Because the tokens are designed to be pretty self-contained, this parser
   doesn't ever need to backtrack.  I always like it when I can achieve that.
 
